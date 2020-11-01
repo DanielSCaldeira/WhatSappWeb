@@ -1,0 +1,9 @@
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\bin\Debug\netcoreapp3.1\WhatSappRobo.Extensao.deps.json
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\bin\Debug\netcoreapp3.1\WhatSappRobo.Extensao.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.AssemblyInfoInputs.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.AssemblyInfo.cs
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\bin\Debug\netcoreapp3.1\WhatSappRobo.Extensao.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.csprojAssemblyReference.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.csproj.CoreCompileInputs.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRobo.Extensao\obj\Debug\netcoreapp3.1\WhatSappRobo.Extensao.pdb

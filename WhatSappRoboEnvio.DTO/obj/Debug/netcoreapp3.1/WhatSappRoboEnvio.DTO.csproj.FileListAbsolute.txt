@@ -1,0 +1,9 @@
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\bin\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.deps.json
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\bin\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\bin\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.csprojAssemblyReference.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.AssemblyInfoInputs.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.AssemblyInfo.cs
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.csproj.CoreCompileInputs.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.DTO\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.DTO.pdb

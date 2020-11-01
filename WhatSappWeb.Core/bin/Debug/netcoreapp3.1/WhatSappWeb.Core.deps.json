@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WhatSappWeb.Core/1.0.0": {
+        "runtime": {
+          "WhatSappWeb.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WhatSappWeb.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio\\WhatSappRoboEnvio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\WhatSappRoboEnvio.Extensao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\WhatSappRoboEnvio.Extensao.csproj",
+        "projectName": "WhatSappRoboEnvio.Extensao",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\WhatSappRoboEnvio.Extensao.csproj",
+        "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielSoaresCaldeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\WhatSappRoboEnvio.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\WhatSappRoboEnvio.Service.csproj",
+        "projectName": "WhatSappRoboEnvio.Service",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\WhatSappRoboEnvio.Service.csproj",
+        "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielSoaresCaldeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\WhatSappRoboEnvio.Extensao.csproj": {
+                "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Extensao\\WhatSappRoboEnvio.Extensao.csproj"
+              },
+              "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\WhatSappWeb.DTO.csproj": {
+                "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\WhatSappWeb.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio\\WhatSappRoboEnvio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio\\WhatSappRoboEnvio.csproj",
+        "projectName": "WhatSappRoboEnvio",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio\\WhatSappRoboEnvio.csproj",
+        "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielSoaresCaldeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\WhatSappRoboEnvio.Service.csproj": {
+                "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappRoboEnvio.Service\\WhatSappRoboEnvio.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\WhatSappWeb.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\WhatSappWeb.DTO.csproj",
+        "projectName": "WhatSappWeb.DTO",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\WhatSappWeb.DTO.csproj",
+        "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielSoaresCaldeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
