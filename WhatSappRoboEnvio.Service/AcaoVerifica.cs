@@ -8,8 +8,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using WhatSappRoboEnvio.Extensao;
 using WhatSappWeb.DTO;
+using WhatSappWeb.Model;
 
 namespace WhatSappRoboEnvio.Service
 {
@@ -82,33 +84,34 @@ namespace WhatSappRoboEnvio.Service
         {
             try
             {
-                string text;
-                string textVelha = null;
-                var bw = new ZXing.BarcodeWriter();
-                var encOptions = new ZXing.Common.EncodingOptions() { Width = 400, Height = 400, Margin = 0 };
-                bw.Options = encOptions;
-                bw.Format = ZXing.BarcodeFormat.QR_CODE;
-                do
+                using (QrCodeService servise = new QrCodeService())
                 {
-                    text = driver.FindElement(By.ClassName(_qrCode), 5)?.GetAttribute("data-ref");
-                    if (string.IsNullOrEmpty(text) || textVelha == text)
+                    string text;
+                    string textVelha = null;
+                    do
                     {
-                        continue;
-                    }
+                        text = driver.FindElement(By.ClassName(_qrCode), 30)?.GetAttribute("data-ref");
+                        if (textVelha == text || string.IsNullOrEmpty(text))
+                        {
+                            Console.WriteLine("continue..");
+                            continue;
+                        }
 
-                    Bitmap resultado = new Bitmap(bw.Write(text));
+                        Console.WriteLine("Salva..");
+                        servise.Salvar(new QrCode()
+                        {
+                            Src = text,
+                            Telefone = "61995757864",
+                            DataExpiracao = DateTime.Now.AddSeconds(20)
+                        });
 
-                    var path = "D://QrCode";
-                    if (Directory.Exists(path))
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(path);
-                    }
+                        textVelha = text;
 
-                    resultado.Save(path + "/t.jpg");
-                    textVelha = text;
-                    System.Threading.Thread.Sleep(8000);
+                        //tempo ideal para esperar
+                        System.Threading.Thread.Sleep(19000);
+                    } while (!driver.Existe(By.ClassName(_campoDePesquisa)));
+                }
 
-                } while (!driver.ExisteDisplayed(By.ClassName(_campoDePesquisa)));
             }
             catch (WebDriverTimeoutException ex)
             {
@@ -150,33 +153,19 @@ namespace WhatSappRoboEnvio.Service
                 resposta.Numero = "5561995757864";
                 resposta.Mensagem = "Teste";
 
-                var url = $"https://api.whatsapp.com/send?phone=" + resposta.Numero + "&text=" + resposta.Mensagem;
+                var url = $"https://web.whatsapp.com/send?phone=" + resposta.Numero + "&text=" + resposta.Mensagem;
 
+                Console.WriteLine("Redirecionando....");
                 driver.Navigate().GoToUrl(url);
 
 
                 if (VerificaSePaginaFoiCarregada(driver))
                 {
-                    if (driver.Existe(By.ClassName("_whatsapp_www__block_action"), 30) == true)
-                    {
-                        var botao1 = driver.FindElement(By.ClassName("_whatsapp_www__block_action"), 30).FindElement(By.TagName("a"), 30);
-                        botao1.Click();
-                        Console.WriteLine("1");
-                    }
-
-                    if (driver.ExisteDisplayed(By.CssSelector("._8ibw>a"), 30) == true)
-                    {
-                        var texto = driver.FindElement(By.CssSelector("._8ibw>a"), 30).Text;
-                        var botao2 = driver.FindElement(By.CssSelector("._8ibw>a"), 30);
-                        botao2.Click();
-                        Console.WriteLine("2");
-                    }
-
                     if (driver.Existe(By.ClassName("_1U1xa"), 30) == true)
                     {
+                        Console.WriteLine("enviando....");
                         var botao3 = driver.FindElement(By.ClassName("_1U1xa"), 30);
                         botao3.Click();
-                        Console.WriteLine("3");
                     }
                 }
                 else

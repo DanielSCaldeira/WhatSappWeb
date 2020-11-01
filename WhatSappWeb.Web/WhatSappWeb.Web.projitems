@@ -9,5 +9,10 @@
     <Import_RootNamespace>WhatSappWeb.Web</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Frontend\page\home\home.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Frontend\page\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Frontend\page\scripts\" />
   </ItemGroup>
 </Project>

@@ -7,10 +7,10 @@ namespace WhatSappWeb.Model
     public class Token
     {
 
-        [BsonElement("conteudo")]
-        public virtual string conteudo { get; set; }
+        [BsonElement("Conteudo")]
+        public virtual string Conteudo { get; set; }
 
-        [BsonElement("dataCadastro")]
+        [BsonElement("Data_Expiracao")]
         public virtual DateTime? DataExpiracao { get; set; }
 
     }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w8fMGdZblLPf2WWjXpH14x6/jt/S6zMcqYekRbXnO7/zjjYq4xDp3lfEBXZnEmKW0uHVo7ePIlCIcYIXOBVrxA==",
+  "dgSpecHash": "qr2jvAQXZbVJKRpfNN3XrXCD4NH8nDmS8sNfoU4GVF35mGNbmY9R1/SSOuwLhpdjie6jPIqGovzXduHdXtZ4GA==",
   "success": true,
   "projectFilePath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Service\\WhatSappWeb.Service.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\mongodb.bson\\2.11.3\\mongodb.bson.2.11.3.nupkg.sha512"
+  ],
   "logs": []
 }

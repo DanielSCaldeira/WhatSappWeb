@@ -264,8 +264,20 @@ namespace WhatSappRoboEnvio.Extensao
             {
                 return false;
             }
-        }
-
+        }   
+        
+        public static bool Existe(this IWebDriver driver, By by)
+        {
+            try
+            {
+                driver.FindElement(by);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }    
         public static bool Existe(this IWebDriver driver, By by, uint secondsTimeout = 10)
         {
             try
@@ -273,7 +285,7 @@ namespace WhatSappRoboEnvio.Extensao
                 driver.FindElement(by, secondsTimeout);
                 return true;
             }
-            catch (NoSuchElementException)
+            catch
             {
                 return false;
             }

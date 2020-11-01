@@ -25,7 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappDatabase.MongoDB", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRobo.Extensao", "WhatSappRobo.Extensao\WhatSappRobo.Extensao.csproj", "{9BE3D941-0324-4E78-BFFC-F03468419591}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WhatSappWeb.Web", "WhatSappWeb.Web\WhatSappWeb.Web.shproj", "{AC0B6302-1730-4B06-B3C4-7FB5D4043342}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WhatSappWeb.Web\WhatSappWeb.Web.projitems*{ac0b6302-1730-4b06-b3c4-7fb5d4043342}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

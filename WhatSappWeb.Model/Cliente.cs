@@ -14,26 +14,25 @@ namespace WhatSappWeb.Model
         }
 
         [BsonId]
-        [BsonElement("id")]
         [BsonRepresentation(BsonType.ObjectId)]
         public virtual string Id { get; set; }
 
-        [BsonElement("nome")]
+        [BsonElement("Nome")]
         public virtual string Nome { get; set; }
 
-        [BsonElement("email")]
+        [BsonElement("Email")]
         public virtual string Email { get; set; }
 
-        [BsonElement("telefone")]
+        [BsonElement("Telefone")]
         public virtual string Telefone { get; set; }
 
-        [BsonElement("dataCadastro")]
+        [BsonElement("Data_Cadastro")]
         public virtual DateTime? DataCadastro { get; set; }
 
-        [BsonElement("token")]
+        [BsonElement("Token")]
         public virtual Token Token { get; set; }
 
-        [BsonElement("empresa")]
+        [BsonElement("Empresa")]
         public virtual bool Empresa { get; set; }
 
     }

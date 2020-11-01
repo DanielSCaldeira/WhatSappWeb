@@ -21,15 +21,11 @@ namespace WhatSappDatabase.MongoDB.Base
         /// <summary>
         /// Propriedade que está a conexão com o banco de dados.
         /// </summary>
-        private static string strConexao { get; set; }
         private static string StrConexao
         {
             get
             {
-                var xml = System.IO.File.ReadAllText(@"wwwroot\Conexao\conexao.json");
-                var t = System.IO.File.ReadAllText(@"~\Conexao\conexao.json");
-                var json = System.IO.File.ReadAllText("conexao.json");
-                return json;
+                return "mongodb://localhost:27017/WhatSaap";
             }
         }
 
@@ -92,7 +88,7 @@ namespace WhatSappDatabase.MongoDB.Base
             {
                 nomeDaColecao = PegarNomeColecao();
                 sessao = server.StartSession();
-                db = sessao.Client.GetDatabase(MongoUrl.Create(strConexao).DatabaseName);
+                db = sessao.Client.GetDatabase(MongoUrl.Create(StrConexao).DatabaseName);
             }
             catch (Exception ex)
             {
@@ -109,7 +105,7 @@ namespace WhatSappDatabase.MongoDB.Base
             {
                 nomeDaColecao = PegarNomeColecao();
                 this.sessao = sessao;
-                db = this.sessao.Client.GetDatabase(MongoUrl.Create(strConexao).DatabaseName);
+                db = this.sessao.Client.GetDatabase(MongoUrl.Create(StrConexao).DatabaseName);
             }
             catch (Exception ex)
             {

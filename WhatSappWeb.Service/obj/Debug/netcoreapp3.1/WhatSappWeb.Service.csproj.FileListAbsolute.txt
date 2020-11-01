@@ -4,6 +4,5 @@ C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\bin\D
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.csprojAssemblyReference.cache
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.AssemblyInfoInputs.cache
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.AssemblyInfo.cs
-C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.csproj.CoreCompileInputs.cache
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.dll
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Service\obj\Debug\netcoreapp3.1\WhatSappWeb.Service.pdb

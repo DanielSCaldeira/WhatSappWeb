@@ -12,3 +12,7 @@ C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.Service.csproj.CopyComplete
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.Service.dll
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\obj\Debug\netcoreapp3.1\WhatSappRoboEnvio.Service.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\bin\Debug\netcoreapp3.1\WhatSappDatabase.MongoDB.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\bin\Debug\netcoreapp3.1\WhatSappWeb.Model.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\bin\Debug\netcoreapp3.1\WhatSappDatabase.MongoDB.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio.Service\bin\Debug\netcoreapp3.1\WhatSappWeb.Model.pdb
