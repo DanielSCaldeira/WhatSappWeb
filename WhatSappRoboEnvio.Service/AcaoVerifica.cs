@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using WhatSappRoboEnvio.Extensao;
 using WhatSappWeb.DTO;
 using WhatSappWeb.Model;
+using WhatSappWeb.Service;
 
 namespace WhatSappRoboEnvio.Service
 {
@@ -64,17 +65,15 @@ namespace WhatSappRoboEnvio.Service
             }
         }
 
-        public static WebDriverWait IniciarChamadaDaPagina(this IWebDriver driver)
+        public static void IniciarChamadaDaPagina(this IWebDriver driver)
         {
             try
             {
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                 driver.Navigate().GoToUrl(_url);
-                return wait;
             }
             catch (Exception ex)
             {
-                throw new Exception("Não foi ler o QrCode tempo limite ultrapassado!", ex);
+                throw new Exception("Não foi possivel IniciarChamadaDaPagina Error:!", ex);
             }
         }
 
@@ -101,7 +100,7 @@ namespace WhatSappRoboEnvio.Service
                         servise.Salvar(new QrCode()
                         {
                             Src = text,
-                            Telefone = "61995757864",
+                            TelefoneOrigem = "61995757864",
                             DataExpiracao = DateTime.Now.AddSeconds(20)
                         });
 
@@ -127,17 +126,16 @@ namespace WhatSappRoboEnvio.Service
             }
         }
 
-        public static MensagemDTO VerificaSeTemMensagemParaEnviar()
+        public static List<FilaEnvio> VerificaSeTemMensagemParaEnviar(string telefoneOrigem)
         {
             try
             {
-                var t = new MensagemDTO()
+                using (FilaEnvioService service = new FilaEnvioService())
                 {
-                    Mensagem = "Teste",
-                    Numero = "5561995757864"
-                };
-
-                return t;
+                    return service
+                         .Listar(x => x.TelefoneOrigem == telefoneOrigem && x.Enviado == false)?
+                         .ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -146,31 +144,36 @@ namespace WhatSappRoboEnvio.Service
             }
         }
 
-        public static void RedirecionarParaEnviarMensagem(this IWebDriver driver, MensagemDTO resposta)
+        public static void RedirecionarParaEnviarMensagem(this IWebDriver driver, List<FilaEnvio> filaEnvio)
         {
             try
             {
-                resposta.Numero = "5561995757864";
-                resposta.Mensagem = "Teste";
-
-                var url = $"https://web.whatsapp.com/send?phone=" + resposta.Numero + "&text=" + resposta.Mensagem;
-
-                Console.WriteLine("Redirecionando....");
-                driver.Navigate().GoToUrl(url);
-
-
-                if (VerificaSePaginaFoiCarregada(driver))
+                using (FilaEnvioService service = new FilaEnvioService())
                 {
-                    if (driver.Existe(By.ClassName("_1U1xa"), 30) == true)
+                    foreach (var item in filaEnvio)
                     {
-                        Console.WriteLine("enviando....");
-                        var botao3 = driver.FindElement(By.ClassName("_1U1xa"), 30);
-                        botao3.Click();
+                        var url = $"https://web.whatsapp.com/send?phone=" + item.TelefoneDestino + "&text=" + item.Mensagem;
+
+                        Console.WriteLine("Redirecionando....");
+                        driver.Navigate().GoToUrl(url);
+
+
+                        if (VerificaSePaginaFoiCarregada(driver))
+                        {
+                            if (driver.Existe(By.ClassName("_1U1xa"), 30) == true)
+                            {
+                                Console.WriteLine("enviando....");
+                                driver.FindElement(By.ClassName("_1U1xa"), 30).Click();
+                                Console.WriteLine("Atualizando item na fila....");
+                                item.Enviado = true;
+                                service.Gravar(item);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não foi possivel abrir a pagina para enviar a mensagem");
+                        }
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Não foi possivel abrir a pagina para enviar a mensagem");
                 }
             }
             catch (NoSuchElementException ex)

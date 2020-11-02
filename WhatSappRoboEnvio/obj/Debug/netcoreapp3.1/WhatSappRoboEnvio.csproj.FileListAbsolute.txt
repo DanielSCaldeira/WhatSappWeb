@@ -33,3 +33,5 @@ C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Deb
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Debug\netcoreapp3.1\WhatSappWeb.Model.dll
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Debug\netcoreapp3.1\WhatSappDatabase.MongoDB.pdb
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Debug\netcoreapp3.1\WhatSappWeb.Model.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Debug\netcoreapp3.1\WhatSappWeb.Service.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappRoboEnvio\bin\Debug\netcoreapp3.1\WhatSappWeb.Service.pdb

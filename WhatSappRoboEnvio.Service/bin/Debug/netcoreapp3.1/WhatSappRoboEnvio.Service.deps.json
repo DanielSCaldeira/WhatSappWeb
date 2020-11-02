@@ -12,7 +12,8 @@
           "WhatSappDatabase.MongoDB": "1.0.0",
           "WhatSappRoboEnvio.Extensao": "1.0.0",
           "WhatSappWeb.DTO": "1.0.0",
-          "WhatSappWeb.Model": "1.0.0"
+          "WhatSappWeb.Model": "1.0.0",
+          "WhatSappWeb.Service": "1.0.0"
         },
         "runtime": {
           "WhatSappRoboEnvio.Service.dll": {}
@@ -929,6 +930,9 @@
         }
       },
       "WhatSappWeb.DTO/1.0.0": {
+        "dependencies": {
+          "WhatSappWeb.Model": "1.0.0"
+        },
         "runtime": {
           "WhatSappWeb.DTO.dll": {}
         }
@@ -940,6 +944,17 @@
         },
         "runtime": {
           "WhatSappWeb.Model.dll": {}
+        }
+      },
+      "WhatSappWeb.Service/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.11.3",
+          "WhatSappDatabase.MongoDB": "1.0.0",
+          "WhatSappWeb.DTO": "1.0.0",
+          "WhatSappWeb.Model": "1.0.0"
+        },
+        "runtime": {
+          "WhatSappWeb.Service.dll": {}
         }
       }
     }
@@ -1617,6 +1632,11 @@
       "sha512": ""
     },
     "WhatSappWeb.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WhatSappWeb.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

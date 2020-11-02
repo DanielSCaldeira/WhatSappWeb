@@ -3,6 +3,10 @@ C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\bin\Debu
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\bin\Debug\netcoreapp3.1\WhatSappWeb.Core.pdb
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.AssemblyInfoInputs.cache
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.AssemblyInfo.cs
-C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.csproj.CoreCompileInputs.cache
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.dll
 C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.csprojAssemblyReference.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\bin\Debug\netcoreapp3.1\WhatSappDatabase.MongoDB.dll
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\bin\Debug\netcoreapp3.1\WhatSappDatabase.MongoDB.pdb
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.csproj.CoreCompileInputs.cache
+C:\Users\DanielSoaresCaldeira\source\repos\WhatSappWeb\WhatSappWeb.Core\obj\Debug\netcoreapp3.1\WhatSappWeb.Core.csproj.CopyComplete

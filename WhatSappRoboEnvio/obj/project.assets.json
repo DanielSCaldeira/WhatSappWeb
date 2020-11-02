@@ -1562,7 +1562,8 @@
           "WhatSappDatabase.MongoDB": "1.0.0",
           "WhatSappRoboEnvio.Extensao": "1.0.0",
           "WhatSappWeb.DTO": "1.0.0",
-          "WhatSappWeb.Model": "1.0.0"
+          "WhatSappWeb.Model": "1.0.0",
+          "WhatSappWeb.Service": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WhatSappRoboEnvio.Service.dll": {}
@@ -1574,6 +1575,9 @@
       "WhatSappWeb.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "WhatSappWeb.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WhatSappWeb.DTO.dll": {}
         },
@@ -1593,6 +1597,22 @@
         },
         "runtime": {
           "bin/placeholder/WhatSappWeb.Model.dll": {}
+        }
+      },
+      "WhatSappWeb.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MongoDB.Bson": "2.11.3",
+          "WhatSappDatabase.MongoDB": "1.0.0",
+          "WhatSappWeb.DTO": "1.0.0",
+          "WhatSappWeb.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WhatSappWeb.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WhatSappWeb.Service.dll": {}
         }
       }
     }
@@ -5640,6 +5660,11 @@
       "type": "project",
       "path": "../WhatSappWeb.Model/WhatSappWeb.Model.csproj",
       "msbuildProject": "../WhatSappWeb.Model/WhatSappWeb.Model.csproj"
+    },
+    "WhatSappWeb.Service/1.0.0": {
+      "type": "project",
+      "path": "../WhatSappWeb.Service/WhatSappWeb.Service.csproj",
+      "msbuildProject": "../WhatSappWeb.Service/WhatSappWeb.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {

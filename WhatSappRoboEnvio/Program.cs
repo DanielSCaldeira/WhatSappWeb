@@ -14,20 +14,21 @@ namespace WhatSappRoboEnvio
             IWebDriver driver = new ChromeDriver("C:\\Selenium\\");
             try
             {
-                WebDriverWait wait = AcaoVerifica.IniciarChamadaDaPagina(driver);
+                AcaoVerifica.IniciarChamadaDaPagina(driver);
                 AcaoVerifica.SeAPaginaFoiCarregada(driver);
                 AcaoVerifica.GerarQrCode(driver);
                 AcaoVerifica.ValidacaoQrCode(driver);
-
+                //var usuario = AcaoVerifica.ValidadarDadosUsuario(driver);
                 do
                 {
                     //Proxima Mensagem
                     //VerificaSeTemMensagemParaEnviar
-                    var mensagem = AcaoVerifica.VerificaSeTemMensagemParaEnviar();
-                    //EnviarMensagem
-                    AcaoVerifica.RedirecionarParaEnviarMensagem(driver, mensagem);
-                    //Tempo para poder recarregar novamente a tarefa 
+                    var mensagensFila = AcaoVerifica.VerificaSeTemMensagemParaEnviar("5561992946818");
 
+                    //EnviarMensagem
+                    AcaoVerifica.RedirecionarParaEnviarMensagem(driver, mensagensFila);
+
+                    //Tempo necessario para poder realizar uma nova tarefa 
                     System.Threading.Thread.Sleep(2300);
 
                 } while (!AcaoVerifica.DesligarRobo());
@@ -38,17 +39,15 @@ namespace WhatSappRoboEnvio
             catch (NoSuchElementException ex)
             {
                 Console.WriteLine(ex);
-                driver.Close();
-                driver.Dispose();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                driver.Close();
-                driver.Dispose();
             }
             finally
             {
+                driver.Close();
+                driver.Dispose();
                 Iniciar.IniciarRoboNovamente();
             }
         }
@@ -62,6 +61,7 @@ namespace WhatSappRoboEnvio
             try
             {
                 QtdDeVezesQueORoboFoiIniciado++;
+                Console.WriteLine("Robo sendo reiniciado.... Quantidade de vezes que o robo caiu"+ QtdDeVezesQueORoboFoiIniciado);
                 new Program();
             }
             catch (Exception ex)

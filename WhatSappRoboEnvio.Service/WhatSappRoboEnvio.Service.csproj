@@ -13,6 +13,7 @@
     <ProjectReference Include="..\WhatSappRoboEnvio.Extensao\WhatSappRoboEnvio.Extensao.csproj" />
     <ProjectReference Include="..\WhatSappWeb.DTO\WhatSappWeb.DTO.csproj" />
     <ProjectReference Include="..\WhatSappWeb.Model\WhatSappWeb.Model.csproj" />
+    <ProjectReference Include="..\WhatSappWeb.Service\WhatSappWeb.Service.csproj" />
   </ItemGroup>
 
 </Project>

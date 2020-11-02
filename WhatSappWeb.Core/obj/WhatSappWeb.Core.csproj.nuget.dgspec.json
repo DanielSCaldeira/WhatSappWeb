@@ -4,14 +4,14 @@
     "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj": {
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\WhatSappDatabase.MongoDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj",
-        "projectName": "WhatSappWeb.Core",
-        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj",
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\WhatSappDatabase.MongoDB.csproj",
+        "projectName": "WhatSappDatabase.MongoDB",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\WhatSappDatabase.MongoDB.csproj",
         "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\obj\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,82 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj",
+        "projectName": "WhatSappWeb.Core",
+        "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\WhatSappWeb.Core.csproj",
+        "packagesPath": "C:\\Users\\DanielSoaresCaldeira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappWeb.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielSoaresCaldeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\WhatSappDatabase.MongoDB.csproj": {
+                "projectPath": "C:\\Users\\DanielSoaresCaldeira\\source\\repos\\WhatSappWeb\\WhatSappDatabase.MongoDB\\WhatSappDatabase.MongoDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

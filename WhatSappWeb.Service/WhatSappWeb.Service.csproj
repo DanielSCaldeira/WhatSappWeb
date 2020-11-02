@@ -8,4 +8,10 @@
     <PackageReference Include="MongoDB.Bson" Version="2.11.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WhatSappDatabase.MongoDB\WhatSappDatabase.MongoDB.csproj" />
+    <ProjectReference Include="..\WhatSappWeb.DTO\WhatSappWeb.DTO.csproj" />
+    <ProjectReference Include="..\WhatSappWeb.Model\WhatSappWeb.Model.csproj" />
+  </ItemGroup>
+
 </Project>

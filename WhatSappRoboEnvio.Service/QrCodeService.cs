@@ -11,7 +11,7 @@ namespace WhatSappRoboEnvio.Service
         {
             try
             {
-                await GravarAsync(qrcode);
+                await InserirAsync(qrcode);
             }
             catch (Exception ex)
             {
