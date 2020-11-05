@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappWeb.Service", "WhatSappWeb.Service\WhatSappWeb.Service.csproj", "{0574C5D8-C6C4-4A52-A119-2129D5C977DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappWeb.Service", "WhatSappWeb.Service\WhatSappWeb.Service.csproj", "{0574C5D8-C6C4-4A52-A119-2129D5C977DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappWeb.DTO", "WhatSappWeb.DTO\WhatSappWeb.DTO.csproj", "{A4413939-2830-4416-BB14-928C7B8BD5AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappWeb.DTO", "WhatSappWeb.DTO\WhatSappWeb.DTO.csproj", "{A4413939-2830-4416-BB14-928C7B8BD5AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappWeb.Model", "WhatSappWeb.Model\WhatSappWeb.Model.csproj", "{CE0BC900-E241-4D8A-83E2-9ADE40401C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappWeb.Model", "WhatSappWeb.Model\WhatSappWeb.Model.csproj", "{CE0BC900-E241-4D8A-83E2-9ADE40401C67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappWeb.Core", "WhatSappWeb.Core\WhatSappWeb.Core.csproj", "{F2DC5E9C-7539-402F-BE25-1EC77FAA6802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappWeb.Core", "WhatSappWeb.Core\WhatSappWeb.Core.csproj", "{F2DC5E9C-7539-402F-BE25-1EC77FAA6802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappWeb.Api", "WhatSappWeb.Api\WhatSappWeb.Api.csproj", "{DEABE095-D0C2-494B-808B-9183A5839676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappWeb.Api", "WhatSappWeb.Api\WhatSappWeb.Api.csproj", "{DEABE095-D0C2-494B-808B-9183A5839676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRoboEnvio", "WhatSappRoboEnvio\WhatSappRoboEnvio.csproj", "{261B1E9A-B5F0-4348-AFE3-61F2FA521400}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappRoboEnvio", "WhatSappRoboEnvio\WhatSappRoboEnvio.csproj", "{261B1E9A-B5F0-4348-AFE3-61F2FA521400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRoboEnvio.Service", "WhatSappRoboEnvio.Service\WhatSappRoboEnvio.Service.csproj", "{033052C7-A447-447B-A933-097245D84657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappRoboEnvio.Service", "WhatSappRoboEnvio.Service\WhatSappRoboEnvio.Service.csproj", "{033052C7-A447-447B-A933-097245D84657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRoboEnvio.DTO", "WhatSappRoboEnvio.DTO\WhatSappRoboEnvio.DTO.csproj", "{CF3B6E6B-96EB-4BCE-816B-55313A48323D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappRoboEnvio.DTO", "WhatSappRoboEnvio.DTO\WhatSappRoboEnvio.DTO.csproj", "{CF3B6E6B-96EB-4BCE-816B-55313A48323D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRoboEnvio.Extensao", "WhatSappRoboEnvio.Extensao\WhatSappRoboEnvio.Extensao.csproj", "{4D68BEF1-D0E1-4D24-9A57-23CD3883904C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappRoboEnvio.Extensao", "WhatSappRoboEnvio.Extensao\WhatSappRoboEnvio.Extensao.csproj", "{4D68BEF1-D0E1-4D24-9A57-23CD3883904C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappDatabase.MongoDB", "WhatSappDatabase.MongoDB\WhatSappDatabase.MongoDB.csproj", "{9241E8D4-49C4-4D6F-817E-B23D25667565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappDatabase.MongoDB", "WhatSappDatabase.MongoDB\WhatSappDatabase.MongoDB.csproj", "{9241E8D4-49C4-4D6F-817E-B23D25667565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatSappRobo.Extensao", "WhatSappRobo.Extensao\WhatSappRobo.Extensao.csproj", "{9BE3D941-0324-4E78-BFFC-F03468419591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatSappRobo.Extensao", "WhatSappRobo.Extensao\WhatSappRobo.Extensao.csproj", "{9BE3D941-0324-4E78-BFFC-F03468419591}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WhatSappWeb.Web", "WhatSappWeb.Web\WhatSappWeb.Web.shproj", "{AC0B6302-1730-4B06-B3C4-7FB5D4043342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Autenticacao", "WebApi.Autenticacao\WebApi.Autenticacao.csproj", "{AD18316A-739A-48F1-B974-F668084F0D77}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -80,6 +82,10 @@ Global
 		{9BE3D941-0324-4E78-BFFC-F03468419591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BE3D941-0324-4E78-BFFC-F03468419591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BE3D941-0324-4E78-BFFC-F03468419591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD18316A-739A-48F1-B974-F668084F0D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD18316A-739A-48F1-B974-F668084F0D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD18316A-739A-48F1-B974-F668084F0D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD18316A-739A-48F1-B974-F668084F0D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

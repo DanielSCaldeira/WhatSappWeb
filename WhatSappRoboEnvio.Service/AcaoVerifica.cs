@@ -69,6 +69,7 @@ namespace WhatSappRoboEnvio.Service
         {
             try
             {
+                //@TODO: validar quando não tiver interente
                 driver.Navigate().GoToUrl(_url);
             }
             catch (Exception ex)

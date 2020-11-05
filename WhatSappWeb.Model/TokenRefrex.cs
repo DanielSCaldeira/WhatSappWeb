@@ -4,7 +4,7 @@ using System;
 
 namespace WhatSappWeb.Model
 {
-    public class Token
+    public class TokenRefrex
     {
 
         [BsonElement("Conteudo")]
@@ -15,8 +15,5 @@ namespace WhatSappWeb.Model
 
         [BsonElement("Data_Expiracao")]
         public virtual DateTime? DataExpiracao { get; set; }
-
-        [BsonElement("Token_Refrex")]
-        public virtual TokenEmpresa TokenEmpresa { get; set; }
     }
 }

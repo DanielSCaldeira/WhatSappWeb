@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApi.Autenticacao\WebApi.Autenticacao.csproj" />
     <ProjectReference Include="..\WhatSappWeb.Core\WhatSappWeb.Core.csproj" />
     <ProjectReference Include="..\WhatSappWeb.DTO\WhatSappWeb.DTO.csproj" />
     <ProjectReference Include="..\WhatSappWeb.Service\WhatSappWeb.Service.csproj" />
