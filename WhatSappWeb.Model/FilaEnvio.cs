@@ -16,6 +16,9 @@ namespace WhatSappWeb.Model
         [BsonElement("Mensagem")]
         public virtual string Mensagem { get; set; }  
         
+        [BsonElement("Id_Pessoa")]
+        public virtual string IdPessoa { get; set; }  
+        
         [BsonElement("Telefone_Origem")]
         public virtual string TelefoneOrigem { get; set; }
         

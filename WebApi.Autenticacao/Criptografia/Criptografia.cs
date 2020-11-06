@@ -31,7 +31,7 @@ namespace WebApi.Autenticacao
 
         }
 
-        public static TokenCliente DescriptografarToken(string textoCriptografado)
+        public static TokenClienteDTO DescriptografarToken(string textoCriptografado)
         {
             TripleDESCryptoServiceProvider desCryptoProvider = new TripleDESCryptoServiceProvider();
             MD5CryptoServiceProvider hashMD5Provider = new MD5CryptoServiceProvider();
@@ -46,7 +46,7 @@ namespace WebApi.Autenticacao
 
             string plaintext = Encoding.UTF8.GetString(desCryptoProvider.CreateDecryptor().TransformFinalBlock(byteBuff, 0, byteBuff.Length));
 
-            return JsonConvert.DeserializeObject<TokenCliente>(plaintext);
+            return JsonConvert.DeserializeObject<TokenClienteDTO>(plaintext);
         }
 
     }

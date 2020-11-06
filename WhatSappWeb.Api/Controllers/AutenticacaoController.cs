@@ -50,55 +50,56 @@ namespace WhatSappWeb.Api.Controllers
         {
 
             //terminar o token gerado para empresa 
-            using (ClienteService service = new ClienteService())
-            {
-                var cliente = service.Buscar(x => x.Token.TokenEmpresa.TokenRefrex.Conteudo == token);
+            //using (ClienteService service = new ClienteService())
+            //{
+            //    var cliente = service.Buscar(x => x.Token.TokenEmpresa.TokenRefrex.Conteudo == token);
 
-                if (cliente == null)
-                {
-                    return NotFound();
-                }
+            //    if (cliente == null)
+            //    {
+            //        return NotFound();
+            //    }
 
-                var dataExpiracao = DateTime.Parse(data);
-                var dataAtual = DateTime.Now.AddHours(6);
+            //    var dataExpiracao = DateTime.Parse(data);
+            //    var dataAtual = DateTime.Now.AddHours(6);
 
-                var tokenAtuall = new TokenCliente()
-                {
-                    Cliente = { Id = cliente.Id, Email = cliente.Email },
-                    DataExpiracao = dataExpiracao,
-                    Empresa = { Descricao = descricao }
-                };
+            //    var tokenAtuall = new TokenCliente()
+            //    {
+            //        Cliente = { Id = cliente.Id, Email = cliente.Email },
+            //        DataExpiracao = dataExpiracao,
+            //        Empresa = { Descricao = descricao }
+            //    };
 
-                var tokenRefrexx = new TokenCliente()
-                {
-                    Cliente = { Id = cliente.Id, Email = cliente.Email },
-                    DataExpiracao = dataExpiracao,
-                    Empresa = { Descricao = descricao }
-                };
+            //    var tokenRefrexx = new TokenCliente()
+            //    {
+            //        Cliente = { Id = cliente.Id, Email = cliente.Email },
+            //        DataExpiracao = dataExpiracao,
+            //        Empresa = { Descricao = descricao }
+            //    };
 
-                var tokenAtual = Criptografia.CriptografarToken(tokenAtuall);
-                var tokenRefrex = Criptografia.CriptografarToken(tokenRefrexx);
+            //    var tokenAtual = Criptografia.CriptografarToken(tokenAtuall);
+            //    var tokenRefrex = Criptografia.CriptografarToken(tokenRefrexx);
 
-                cliente.Token.TokenEmpresa = new TokenEmpresa() { Conteudo = tokenAtual, DataExpiracao = dataAtual, Descricao = descricao };
-                cliente.Token.TokenEmpresa.TokenRefrex = new TokenRefrex() { Conteudo = tokenRefrex, DataExpiracao = dataExpiracao, Descricao = descricao };
+            //    cliente.Token.TokenEmpresa = new TokenEmpresa() { Conteudo = tokenAtual, DataExpiracao = dataAtual, Descricao = descricao };
+            //    cliente.Token.TokenEmpresa.TokenRefrex = new TokenRefrex() { Conteudo = tokenRefrex, DataExpiracao = dataExpiracao, Descricao = descricao };
 
-                service.Alterar(x => x.Id == cliente.Id, cliente);
+            //    service.Alterar(x => x.Id == cliente.Id, cliente);
 
-                var resposta = new TokenDTO()
-                {
-                    Token = {
-                           Conteudo = tokenAtual,
-                           DataExpiracao = dataAtual,
-                        },
-                    TokenRefrex = {
-                            Conteudo = tokenRefrex,
-                            DataExpiracao = dataExpiracao
-                        }
-                };
+            //    var resposta = new TokenDTO()
+            //    {
+            //        Token = {
+            //               Conteudo = tokenAtual,
+            //               DataExpiracao = dataAtual,
+            //            },
+            //        TokenRefrex = {
+            //                Conteudo = tokenRefrex,
+            //                DataExpiracao = dataExpiracao
+            //            }
+            //    };
 
-                return Ok(resposta);
-            }
-            return "value";
+            //    return Ok(resposta);
+            //}
+            //return "value";
+            return Ok();
         }
 
         // POST api/<AutenticacaoController>
@@ -121,7 +122,7 @@ namespace WhatSappWeb.Api.Controllers
 
                     var data = DateTime.Now.AddHours(2);
 
-                    var token = new TokenCliente()
+                    var token = new TokenClienteDTO()
                     {
                         Cliente = { Id = cliente.Id, Email = cliente.Email },
                         DataExpiracao = data,
@@ -129,7 +130,7 @@ namespace WhatSappWeb.Api.Controllers
 
                     var tokenFinal = Criptografia.CriptografarToken(token);
 
-                    cliente.Token = new Token() { Conteudo = tokenFinal, DataExpiracao = data };
+                    cliente.Token = new TokenPessoa() { Conteudo = tokenFinal, DataExpiracao = data };
 
                     service.Alterar(x => x.Id == cliente.Id, cliente);
 
@@ -156,14 +157,14 @@ namespace WhatSappWeb.Api.Controllers
                     var dataExpiracao = DateTime.Parse(data);
                     var dataAtual = DateTime.Now.AddHours(6);
 
-                    var tokenAtuall = new TokenCliente()
+                    var tokenAtuall = new TokenClienteDTO()
                     {
                         Cliente = { Id = cliente.Id, Email = cliente.Email },
                         DataExpiracao = dataExpiracao,
                         Empresa = { Descricao = descricao }
                     };
 
-                    var tokenRefrexx = new TokenCliente()
+                    var tokenRefrexx = new TokenClienteDTO()
                     {
                         Cliente = { Id = cliente.Id, Email = cliente.Email },
                         DataExpiracao = dataExpiracao,
@@ -173,7 +174,7 @@ namespace WhatSappWeb.Api.Controllers
                     var tokenAtual = Criptografia.CriptografarToken(tokenAtuall);
                     var tokenRefrex = Criptografia.CriptografarToken(tokenRefrexx);
 
-                    cliente.Token.TokenEmpresa = new TokenEmpresa() { Conteudo = tokenAtual, DataExpiracao = dataAtual, Descricao = descricao };
+                    cliente.Token.TokenEmpresa = new EmpresaPessoa() { Conteudo = tokenAtual, DataExpiracao = dataAtual, Descricao = descricao };
                     cliente.Token.TokenEmpresa.TokenRefrex = new TokenRefrex() { Conteudo = tokenRefrex, DataExpiracao = dataExpiracao, Descricao = descricao };
 
                     service.Alterar(x => x.Id == cliente.Id, cliente);

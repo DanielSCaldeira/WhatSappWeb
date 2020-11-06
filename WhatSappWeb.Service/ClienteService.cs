@@ -4,7 +4,7 @@ using WhatSappWeb.Model;
 namespace WhatSappWeb.Service
 {
 
-    public class ClienteService : ServiceMongo<Cliente>
+    public class ClienteService : ServiceMongo<Pessoa>
     {
 
     }

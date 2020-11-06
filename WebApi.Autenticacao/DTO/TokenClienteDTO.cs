@@ -3,11 +3,11 @@ using WhatSappWeb.Model;
 
 namespace WebApi.Autenticacao
 {
-    public class TokenCliente
+    public class TokenClienteDTO
     {
-        public Cliente Cliente { get; set; }
+        public ClienteDTO Cliente { get; set; }
 
-        public Cliente Empresa { get; set; }
+        public ClienteDTO Empresa { get; set; }
 
         public DateTime DataExpiracao { get; set; }
     }

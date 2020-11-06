@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WebApi.Autenticacao
 {
-    public class Cliente
+    public class ClienteDTO
     {
         public string Id { get; set; }
 
